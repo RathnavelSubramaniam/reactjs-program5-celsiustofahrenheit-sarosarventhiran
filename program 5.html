@@ -20,12 +20,10 @@
             const celsius = [0, 10, 20, 30, 40, 100];
 
             // Convert to Fahrenheit using map()
-           
-            
+            const fahrenheit = celsius.map(temp => (temp * 9/5) + 32);
 
             // Display the results
-
-            document.getElementById("output").innerHTML = result;
+            document.getElementById("output").innerHTML = fahrenheit.join("<br>");
         }
     </script>
 
